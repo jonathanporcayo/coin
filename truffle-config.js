@@ -1,3 +1,7 @@
+const HDWalletProvider = require("@truffle/hdwallet-provider");
+const teamsMnemonic = "zone baby clean that hockey kiss ride breeze roast swear dwarf original";
+
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -47,6 +51,20 @@ module.exports = {
     //  port: 8545,            // Standard Ethereum port (default: none)
     //  network_id: "*",       // Any network (default: none)
     // },
+
+    teams: {
+      provider: function () {
+        return new HDWalletProvider(
+          teamsMnemonic,
+          "https://sandbox.truffleteams.com/bb209653-0c7f-40e0-8f3b-b2b4192e64cb",
+          0,
+          10,
+          false
+        );
+      },
+      network_id: 1,
+    },
+
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
