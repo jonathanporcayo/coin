@@ -23,8 +23,8 @@ function send(address  receiver,uint amount) public{
 
 }
 
-function getalance() public  view returns (uint) {
-    return balances[msg.sender];
+function getalance(address adr) public  view returns (uint) {
+    return balances[adr];
 }
 
 }
