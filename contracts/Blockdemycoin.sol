@@ -1,7 +1,5 @@
-//pragma
 pragma solidity >=0.4.22 <0.9.0;
-//import
-
+ 
 //contact
  
 contract BlockdemyCoin {
@@ -17,15 +15,15 @@ constructor()  public {
  
 //metodos
 
-function send(address,receiver,uint amount) public{
-   require(condition); balances[msg.sender] > amount)
-        balances[msg.sender]-=amount;
-        balances[msg.sender]+=amount;
+function send(address  receiver,uint amount) public{
+   require(balances[msg.sender] > amount);
+        balances[msg.sender] -= amount;
+        balances[msg.sender] += amount;
  
 
 }
 
-function getalance() public  view return uint {
+function getalance() public  view returns (uint) {
     return balances[msg.sender];
 }
 
