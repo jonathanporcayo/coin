@@ -1,5 +1,5 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const teamsMnemonic = "zone baby clean that hockey kiss ride breeze roast swear dwarf original";
+const teamsMnemonic = "exile curve road entry blouse piano sentence now pizza aim three pave";
 
 
 /**
@@ -56,13 +56,13 @@ module.exports = {
       provider: function () {
         return new HDWalletProvider(
           teamsMnemonic,
-          "https://sandbox.truffleteams.com/bb209653-0c7f-40e0-8f3b-b2b4192e64cb",
+          "https://sandbox.truffleteams.com/01de6054-1b63-4add-ad71-ed2332b2c8dd",
           0,
           10,
           false
         );
       },
-      network_id: 1,
+      network_id: 1620859866133,
     },
 
     // Another network with more advanced options...
